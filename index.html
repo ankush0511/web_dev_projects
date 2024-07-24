@@ -3,34 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tak-Toe</title>
+    <title>StopWatch</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="msg-cont hide">
-        <p id="msg">Winner</p>
-        <button id="new-btn">New Game</button>
-
-    </div>
-    <main>
-        <h1>Tic-Tac-Toe</h1>
-        <div class="container">
-            <div class="game">
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-    
-            </div>
+    <div class="container">
+     <div class="timer_display">
+        00 : 00 : 00 : 00
+            
         </div>
-        <button id="reset-btn">Reset</button>
-        
-    </main>
-    <script src="script.js"></script>
+        <ul class="laps"></ul>
+        <div class="action">
+            <button id="startTimer" onclick="start()">Start</button>
+            <button id="pauseTimer" onclick="pause()">Pause</button>
+            <button id="resetTimer" onclick="reset()">Reset</button>
+            <button id="restartTimer" onclick="restart()">Restart</button>
+            <button id="lap" onclick="lap()">Laps</button>
+            <button id="resetLap" onclick="resetLap()">Restart Lap</button>
+        </div>
+    </div>
+
+<script src="app.js"></script>
 </body>
 </html>
